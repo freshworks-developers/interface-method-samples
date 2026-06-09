@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechServe Interface Playground</title>
+    <script async src="{{{appclient}}}"></script>
+    <link rel="stylesheet" href="../styles/playground.css" />
+  </head>
+  <body>
+    <div class="ip-app">
+      <header class="ip-header">
+        <div class="ip-header__mark">
+          <fw-icon name="settings" size="16" color="#7C3AED"></fw-icon>
+        </div>
+        <div class="ip-header__text">
+          <span class="ip-header__brand">TechServe Global</span>
+          <span class="ip-header__title">Interface method playground</span>
+          <span id="surface-meta" class="ip-header__meta">Loading…</span>
+        </div>
+      </header>
+
+      <div class="ip-body">
+        <p class="ip-muted">
+          Trigger <code>client.interface.trigger()</code> actions grouped by tab. Check the result panel after each click.
+        </p>
+
+        <section class="ip-inputs panel">
+          <p class="ip-section-label">IDs for navigation &amp; CRM</p>
+          <div class="ip-input-grid">
+            <fw-input id="ticket-id" label="Ticket ID" placeholder="e.g. 42" clear-input></fw-input>
+            <fw-input id="requester-id" label="Requester ID" placeholder="e.g. 29001569616" clear-input></fw-input>
+            <fw-input id="contact-id" label="Contact ID" placeholder="e.g. 501" clear-input></fw-input>
+            <fw-input id="crm-record-id" label="CRM record ID" placeholder="e.g. 1" clear-input></fw-input>
+          </div>
+        </section>
+
+        <p id="active-action" class="ip-active-action">Select an action below.</p>
+
+        <fw-tabs id="interface-tabs" class="ip-playground-tabs"></fw-tabs>
+
+        <div id="action-result" class="ip-result-wrap" hidden></div>
+      </div>
+    </div>
+
+    <script async type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+    <script async nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+    <script src="../scripts/lib/interface-playground.js"></script>
+    <script defer src="../scripts/playground.js"></script>
+  </body>
+</html>

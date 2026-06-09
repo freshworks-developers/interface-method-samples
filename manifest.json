@@ -1,10 +1,18 @@
 {
   "platform-version": "3.0",
   "modules": {
+    "common": {
+      "location": {
+        "cti_global_sidebar": {
+          "url": "views/playground.html",
+          "icon": "styles/images/icon.svg"
+        }
+      }
+    },
     "support_ticket": {
       "location": {
         "ticket_sidebar": {
-          "url": "index.html",
+          "url": "views/playground.html",
           "icon": "styles/images/icon.svg"
         }
       }
@@ -12,7 +20,7 @@
     "service_ticket": {
       "location": {
         "ticket_sidebar": {
-          "url": "index.html",
+          "url": "views/playground.html",
           "icon": "styles/images/icon.svg"
         }
       }
@@ -20,14 +28,22 @@
     "deal": {
       "location": {
         "deal_entity_menu": {
-          "url": "index.html",
+          "url": "views/playground.html",
+          "icon": "styles/images/icon.svg"
+        }
+      }
+    },
+    "contact": {
+      "location": {
+        "contact_entity_menu": {
+          "url": "views/playground.html",
           "icon": "styles/images/icon.svg"
         }
       }
     }
   },
   "engines": {
-    "node": "18.17.0",
-    "fdk": "9.1.0"
+    "node": "24.11.0",
+    "fdk": "10.1.2"
   }
 }
