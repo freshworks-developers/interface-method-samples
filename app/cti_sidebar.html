@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CTI sidebar</title>
+  <script async type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script async nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+  <script src="{{{appclient}}}"></script>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="scripts/interface-kit.js"></script>
+  <script src="scripts/page-init.js"></script>
+</head>
+<body class="sidebar-compact">
+  <div class="container">
+    <h4>CTI global sidebar</h4>
+    <p class="section-desc">Show or hide the softphone dialer and missed-call indicator.</p>
+    <div class="btn-row">
+      <fw-button size="small" color="primary" onclick="InterfaceKit.showSoftphone()">Show dialer</fw-button>
+      <fw-button size="small" onclick="InterfaceKit.hideSoftphone()">Hide dialer</fw-button>
+      <fw-button size="small" onclick="InterfaceKit.showMissedCall()">Show missed</fw-button>
+      <fw-button size="small" onclick="InterfaceKit.hideMissedCall()">Hide missed</fw-button>
+    </div>
+  </div>
+</body>
+</html>

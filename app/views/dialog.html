@@ -9,16 +9,9 @@
 </head>
 <body>
   <div style="padding: 16px;">
-    <h4>Modal child view</h4>
-    <p>Data methods and iparams work inside modals when <code>{{{appclient}}}</code> is included.</p>
-    <fw-input label="Sample field" placeholder="Enter text"></fw-input>
+    <h4>Dialog child view</h4>
+    <p>Dialogs support data methods and storage; interface methods are not available inside the iframe.</p>
+    <fw-button color="secondary" size="small">Sample action</fw-button>
   </div>
-  <script>
-    app.initialized().then(function (client) {
-      return client.data.get('ticket');
-    }).then(function (data) {
-      console.log('Modal ticket context', data);
-    }).catch(console.error);
-  </script>
 </body>
 </html>
