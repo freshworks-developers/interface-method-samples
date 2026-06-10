@@ -1,1 +1,23 @@
-{}
+{
+  "demo_ticket_id": {
+    "display_name": "Demo ticket ID",
+    "description": "Ticket ID used by the Open ticket page action.",
+    "type": "number",
+    "required": false,
+    "default_value": 1
+  },
+  "demo_contact_id": {
+    "display_name": "Demo contact ID",
+    "description": "Contact ID used by the Open contact page action.",
+    "type": "number",
+    "required": false,
+    "default_value": 1
+  },
+  "custom_field_name": {
+    "display_name": "Custom field API name",
+    "description": "Element id for PROPERTIES custom field demos (e.g. cf_order_number).",
+    "type": "text",
+    "required": false,
+    "default_value": "cf_custom_field"
+  }
+}

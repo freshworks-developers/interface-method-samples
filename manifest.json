@@ -1,10 +1,18 @@
 {
   "platform-version": "3.0",
+  "app": {
+    "tracking_id": "intfmethods00000001",
+    "start_time": "2026-06-08T10:00:00.000Z"
+  },
   "modules": {
     "common": {
       "location": {
+        "full_page_app": {
+          "url": "full_page.html",
+          "icon": "styles/images/icon.svg"
+        },
         "cti_global_sidebar": {
-          "url": "views/playground.html",
+          "url": "cti_sidebar.html",
           "icon": "styles/images/icon.svg"
         }
       }
@@ -12,38 +20,25 @@
     "support_ticket": {
       "location": {
         "ticket_sidebar": {
-          "url": "views/playground.html",
+          "url": "sidebar.html",
           "icon": "styles/images/icon.svg"
-        }
-      }
-    },
-    "service_ticket": {
-      "location": {
-        "ticket_sidebar": {
-          "url": "views/playground.html",
+        },
+        "ticket_conversation_editor": {
+          "url": "conversation_editor.html",
           "icon": "styles/images/icon.svg"
-        }
-      }
-    },
-    "deal": {
-      "location": {
-        "deal_entity_menu": {
-          "url": "views/playground.html",
-          "icon": "styles/images/icon.svg"
-        }
-      }
-    },
-    "contact": {
-      "location": {
-        "contact_entity_menu": {
-          "url": "views/playground.html",
+        },
+        "time_entry_background": {
+          "url": "time_entry.html",
           "icon": "styles/images/icon.svg"
         }
       }
     }
   },
   "engines": {
-    "node": "24.11.0",
+    "node": "24.11.1",
     "fdk": "10.1.2"
+  },
+  "scripts": {
+    "fdk-unit-test": "vitest run --coverage"
   }
 }

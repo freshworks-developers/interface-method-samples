@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interface Methods Catalog</title>
+  <script async type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script async nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+  <script src="{{{appclient}}}"></script>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="scripts/catalog-helpers.js"></script>
+  <script src="scripts/interface-kit.js"></script>
+  <script src="scripts/page-init.js"></script>
+  <script src="scripts/full_page.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Interface Methods Showcase</h1>
+    <p class="subtitle">
+      Common interface methods available from the full-page app: modals, dialogs, confirm, notify,
+      and ticket/contact navigation. Ticket-specific actions live in the ticket sidebar.
+    </p>
+    <p class="hint">
+      Docs:
+      <a href="https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/front-end-apps/interface-methods/" target="_blank" rel="noopener">
+        Interface methods reference
+      </a>
+    </p>
+    <div id="catalog">
+      <fw-spinner size="medium"></fw-spinner>
+      <p class="hint">Loading catalog…</p>
+    </div>
+  </div>
+</body>
+</html>
